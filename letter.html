@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat semangat buat Helena </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">💌 surat buat helena</div>
+        <div class="nav-links">
+            <a href="index.html">🏡 home</a>
+            <a href="game.html">🎮 game</a>
+            <a href="letter.html" class="active">💌 surat</a>
+            <button id="themeToggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="letter-container">
+            <div class="letter-header">
+                <h1>untuk helena permatasari terlucu </h1>
+                <p>Dibuka pada: <span id="openDate">...</span></p>
+            </div>
+
+            <div class="letter-content">
+                <p>hei helena,</p>
+                
+                <p>aku buat website ini karena pengen kamu tau — klo kamu cantik bagiaku. setiap kali kamu baca ini, inget ya: aku selalu bangga sama kamu.</p>
+                
+                <p>kamu itu lucu, manis, pemberani, dan punya senyum yang bisa ngecerahin hari siapa aja — termasuk aku</p>
+                
+                <p>jangan pernah ragu sama dirimu. kamu bisa ngelakuin apapun yang kamu mau. aku selalu ada buat kamu — mau curhat, nangis, ketawa, atau sekedar diam bareng.</p>
+                
+                <div class="memory-photo">
+                    <img src="assets/helena1.png" alt="kenangan kita">
+                    <p>ini foto yangg aku minta — hehee aku buat ini karena kamu cape banget ngehadapin banyak masalah ✨</p>
+                </div>
+                
+                <p>keep being you. aku support kamu apa adanya.</p>
+                
+                <p>dari kaka yang selalu bangga sama kamu</p>
+                
+                <div class="signature">
+                    <p>— dari orang ganteng.. —</p>
+                </div>
+            </div>
+
+            <div class="letter-actions">
+                <button class="btn" onclick="document.getElementById('bgMusic').play()">
+                    <i class="fas fa-music"></i> dengar lagu lagi
+                </button>
+                <a href="game.html" class="btn">
+                    <i class="fas fa-gamepad"></i> main game lagi
+                </a>
+                <a href="index.html" class="btn">
+                    <i class="fas fa-home"></i> pulang ke rumah
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>surat ini akan selalu ada buat kamu — kapanpun kamu butuh</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/easter-eggs.js"></script>
+    <script>
+        // Set open date
+        document.getElementById('openDate').textContent = new Date().toLocaleDateString('id-ID', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

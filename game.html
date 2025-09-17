@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hati buat Helena 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">🎮 game zone</div>
+        <div class="nav-links">
+            <a href="index.html">🏡 home</a>
+            <a href="game.html" class="active">🎮 game</a>
+            <a href="letter.html">💌 surat</a>
+            <button id="themeToggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <h1>❤️ klik hati, dapatkan semangat!</h1>
+        <div class="game-instructions">
+            <p>Klik hati yang muncul secepat mungkin! Setiap 5 klik, dapat hadiah spesial~</p>
+            <div class="game-stats">
+                <span>❤️ Skor: <span id="score">0</span></span>
+                <span>⏱️ Waktu: <span id="timer">30</span>s</span>
+            </div>
+        </div>
+
+        <div id="game-container"></div>
+
+        <div class="game-controls">
+            <button id="startGameBtn" class="btn primary">▶️ mulai game</button>
+            <button id="resetGameBtn" class="btn secondary">↺ ulang game</button>
+            <a href="index.html" class="btn tertiary">🏡 pulang dulu</a>
+        </div>
+
+        <div class="mini-games">
+            <h3>mau coba game lain?</h3>
+            <button class="btn mini-game-btn" onclick="alert('Fitur coming soon! 😉')">🎯 Tebak Gambar</button>
+            <button class="btn mini-game-btn" onclick="alert('Fitur coming soon! 😉')">🧩 Memory Card</button>
+            <button class="btn mini-game-btn" onclick="alert('Fitur coming soon! 😉')">🔍 Cari Perbedaan</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>jangan lupa istirahat ya, helena 👽</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/easter-eggs.js"></script>
+</body>
+</html>
