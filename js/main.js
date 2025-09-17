@@ -177,5 +177,15 @@ style.textContent = `
         90% { opacity: 1; }
         100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
     }
+    // ✅ NAVBAR SHRINK SAAT SCROLL
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.classList.add('shrink');
+    } else {
+        nav.classList.remove('shrink');
+    }
+});
 `;
+
 document.head.appendChild(style);
